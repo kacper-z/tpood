@@ -1,0 +1,9 @@
+services:
+    app:
+        build: ./
+        command: streamlit run app/main.py --server.port 8000
+        volumes:
+            - ./:/usr/src/app
+        ports:
+            - 8000:8000
+        image: yourstreamlitapp:latest
