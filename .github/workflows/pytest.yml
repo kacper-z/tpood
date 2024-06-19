@@ -1,0 +1,25 @@
+name: Pytest
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Run Pytest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+        
+    - name: Upgrade pip
+      run: pip install --upgrade pip
+      
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+      
+    - name: Run Pytest
+      run: pytest

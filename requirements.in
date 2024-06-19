@@ -1,0 +1,10 @@
+streamlit
+pandas
+dash
+dash_bootstrap_components
+pylint
+black
+gunicorn
+redis
+pytest
+platformdirs>=3.9.1

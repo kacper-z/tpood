@@ -1,10 +1,5 @@
-__pycache__
-*.pyc
-*.pyo
-*.pyd
-.Python
-.env*
-.cache
-*.log
-.git*
-scripts
+.venv/*
+.git/
+.idea
+.DS_Store
+Dockerfile

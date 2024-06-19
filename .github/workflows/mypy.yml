@@ -1,0 +1,25 @@
+name: "mypy check"
+on: [pull_request]
+
+jobs:
+  static-type-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.7'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install mypy==1.10.0  # you can pin your preferred version
+        # Install any other dependencies your project might need
+        # pip install -r requirements.txt
+
+    - name: Check types with mypy
+      run: mypy src
