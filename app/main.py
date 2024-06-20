@@ -18,10 +18,10 @@ tab1, tab2, tab3, tab4 = st.tabs(
     ["Sprawdź ilość liter", "Rzut kostką", "Rzut monetą", "Losowanie litery"]
 )
 
-if 'dice' not in st.session_state:
+if "dice" not in st.session_state:
     st.session_state.dice = []
 
-if 'toss' not in st.session_state:
+if "toss" not in st.session_state:
     st.session_state.toss = []
 
 with tab1:
@@ -50,8 +50,8 @@ with tab2:
 
         number_counts = Counter(st.session_state.dice)
         df = pd.DataFrame(number_counts.items(), columns=["Wyrzut", "Liczba wyrzutów"])
-        blank=['']*len(df)
-        df.index=blank
+        blank = [""] * len(df)
+        df.index = blank
 
         st.dataframe(df)
 
@@ -65,8 +65,8 @@ with tab3:
 
         toss_counts = Counter(st.session_state.toss)
         df = pd.DataFrame(toss_counts.items(), columns=["Wyrzut", "Liczba wyrzutów"])
-        blank=['']*len(df)
-        df.index=blank
+        blank = [""] * len(df)
+        df.index = blank
 
         st.dataframe(df)
 
