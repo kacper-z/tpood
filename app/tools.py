@@ -1,5 +1,7 @@
 import random
 import string
+from wordcloud import WordCloud
+from matplotlib import pyplot as plt
 from collections import Counter
 from typing import Counter as CounterType
 
@@ -21,3 +23,14 @@ def rzut_moneta():
 
 def losuj_litere():
     return random.choice(string.ascii_uppercase)
+
+def chmura_slow(text):
+    # Generate a word cloud image
+    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(text)
+    
+    # Display the generated image:
+    plt.figure(figsize=(10, 5))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis("off")
+    plt.show()
+    return wordcloud

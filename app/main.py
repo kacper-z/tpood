@@ -1,6 +1,7 @@
 import streamlit as st
-from tools import rzut_kostka, rzut_moneta, losuj_litere, licz_litery
+from tools import rzut_kostka, rzut_moneta, losuj_litere, licz_litery, chmura_slow
 import pandas as pd
+import matplotlib.pyplot as plt
 import numpy as np
 from collections import Counter
 
@@ -38,8 +39,12 @@ with tab1:
         df = df.sort_values(by="Liczba wystąpień", ascending=False)
         df.index = np.arange(1, len(df) + 1)
 
-        st.write("Letter counts:")
+        st.write("Liczba liter:")
         st.dataframe(df)
+
+        st.write("Chmura słów:")
+        wordcloud = chmura_slow(text)
+        st.pyplot(plt)
 
 with tab2:
     st.header("Rzut kostką")
