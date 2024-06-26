@@ -8,3 +8,4 @@ gunicorn
 redis
 pytest
 platformdirs>=3.9.1
+wordcloud
