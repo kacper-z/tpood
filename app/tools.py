@@ -1,6 +1,7 @@
 """
 This module provides utility functions for various tasks.
 """
+
 import random
 import string
 from collections import Counter
@@ -11,8 +12,7 @@ from wordcloud import WordCloud
 
 
 def licz_litery(text: str) -> CounterType[str]:
-    """    Counts the number of letters in a given text.
-"""
+    """Counts the number of letters in a given text."""
     text = text.lower()
     text = "".join(filter(str.isalpha, text))
 
@@ -30,8 +30,9 @@ def rzut_moneta():
 
 
 def losuj_litere():
-    """ Randomly selects a letter from the alphabet."""
+    """Randomly selects a letter from the alphabet."""
     return random.choice(string.ascii_uppercase)
+
 
 def chmura_slow(text):
     """Generate a word cloud image"""
