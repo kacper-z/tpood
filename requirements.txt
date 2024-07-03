@@ -4,7 +4,7 @@
 #
 #    pip-compile --allow-unsafe requirements.in
 #
-altair==5.3.0
+altair==4.2.0
     # via streamlit
 astroid==3.2.2
     # via pylint
