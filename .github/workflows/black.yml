@@ -1,11 +1,38 @@
 name: black-action
+
 on: [push, pull_request]
+
 jobs:
   linter_name:
     name: runner / black formatter
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: rickstaa/action-black@v1
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          black_args: ". --check"
+          python-version: '3.11'
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install black
+
+      - name: Run black
+        uses: rickstaa/action-black@v1
+        with:
+          black_args: "."
+
+      - name: Post set up Python
+        if: always()
+        run: echo "Post set up Python step."
+
+      - name: Complete job
+        if: always()
+        run: echo "Complete job step."
