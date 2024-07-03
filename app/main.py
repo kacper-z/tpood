@@ -1,10 +1,12 @@
-import streamlit as st
-from tools import rzut_kostka, rzut_moneta, losuj_litere, licz_litery, chmura_slow
-import pandas as pd
+"""
+Main module for running the application.
+"""
+from collections import Counter
 import matplotlib.pyplot as plt
 import numpy as np
-from collections import Counter
-
+import pandas as pd
+import streamlit as st
+from app.tools import chmura_slow, licz_litery, losuj_litere, rzut_kostka, rzut_moneta
 
 # Ustawienia aplikacji
 st.set_page_config(
