@@ -7,7 +7,7 @@ import string
 from collections import Counter
 from typing import Counter as CounterType
 
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
 
