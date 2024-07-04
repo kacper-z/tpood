@@ -3,6 +3,7 @@ Testing a dice throw
 
 """
 import pytest  # type: ignore
+import matplotlib.pyplot as plt # type: ignore
 from .tools import rzut_kostka
 from .tools import rzut_moneta
 
