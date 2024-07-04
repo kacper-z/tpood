@@ -8,7 +8,7 @@ from .tools import rzut_moneta
 
 
 
-# check if the result values are between 1 and 6
+# check if the result values are between 1 and 6, like in a standard dice
 def test_rzut_kostka():
 
     wynik = []
@@ -23,7 +23,7 @@ def test_rzut_kostka():
 
 
 
-# check if there are only 2 unique values when throwing a dice
+# check if there are only 2 unique values when throwing a coin
 def test_rzut_moneta():
 
     wynik = []
