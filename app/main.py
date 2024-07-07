@@ -7,13 +7,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
-from tools import chmura_slow, licz_litery, losuj_litere, rzut_kostka, rzut_moneta # pylint: disable=unused-import
+from tools import chmura_slow, licz_litery, losuj_litere, rzut_kostka, rzut_moneta
 
-assert chmura_slow
-assert licz_litery
-assert losuj_litere
-assert rzut_kostka
-assert rzut_moneta
 
 # Ustawienia aplikacji
 st.set_page_config(

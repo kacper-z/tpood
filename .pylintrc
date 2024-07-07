@@ -14,6 +14,7 @@ persistent=yes
 py-version=3.9
 suggestion-mode=yes
 unsafe-load-any-extension=no
+init-hook='import sys; sys.path.append("app")'
 
 [MESSAGES CONTROL]
 confidence=
