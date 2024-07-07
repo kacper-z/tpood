@@ -23,7 +23,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Install mypy
-        run: pip install mypy
+        run: pip install mypy --install-types
 
       - name: Run mypy
         run: mypy app/*.py
