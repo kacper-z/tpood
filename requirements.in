@@ -13,3 +13,8 @@ matplotlib
 numpy
 matplotlib.pyplot
 tools
+# mypy stubs
+types-matplotlib
+types-numpy
+pandas-stubs
+types-streamlit
