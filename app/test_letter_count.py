@@ -35,7 +35,8 @@ def test_rzut_moneta():
     """
     Test function for the rzut_moneta() function.
 
-    This function performs 1000 coin tosses using the rzut_moneta() function and checks if the result contains only 2 unique values.
+    This function performs 1000 coin tosses using the rzut_moneta() 
+    function and checks if the result contains only 2 unique values.
     """
 
     wynik = []

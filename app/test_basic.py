@@ -1,3 +1,6 @@
+"""
+This module contains basic test functions.
+"""
 def test_example():
     """
     This is an example test function.
