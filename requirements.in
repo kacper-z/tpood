@@ -11,5 +11,4 @@ platformdirs>=3.9.1
 wordcloud
 matplotlib
 numpy
-matplotlib.pyplot
 tools

@@ -4,7 +4,7 @@
 #
 #    pip-compile --allow-unsafe requirements.in
 #
-altair==4.2.0
+altair==5.3.0
     # via streamlit
 astroid==3.2.2
     # via pylint
@@ -22,7 +22,7 @@ blinker==1.8.2
     #   streamlit
 cachetools==5.3.3
     # via streamlit
-certifi==2024.6.2
+certifi==2024.7.4
     # via requests
 charset-normalizer==3.3.2
     # via requests
@@ -56,7 +56,7 @@ dill==0.3.8
     # via pylint
 flask==3.0.3
     # via dash
-fonttools==4.53.0
+fonttools==4.53.1
     # via matplotlib
 gitdb==4.0.11
     # via gitpython
@@ -85,14 +85,18 @@ jsonschema-specifications==2023.12.1
     # via jsonschema
 kiwisolver==1.4.5
     # via matplotlib
+lxml==5.2.2
+    # via tools
 markdown-it-py==3.0.0
     # via rich
 markupsafe==2.1.5
     # via
     #   jinja2
     #   werkzeug
-matplotlib==3.9.0
-    # via wordcloud
+matplotlib==3.9.1
+    # via
+    #   -r requirements.in
+    #   wordcloud
 mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
@@ -103,6 +107,7 @@ nest-asyncio==1.6.0
     # via dash
 numpy==2.0.0
     # via
+    #   -r requirements.in
     #   altair
     #   contourpy
     #   matplotlib
@@ -127,7 +132,7 @@ pandas==2.2.2
     #   streamlit
 pathspec==0.12.1
     # via black
-pillow==10.3.0
+pillow==10.4.0
     # via
     #   matplotlib
     #   streamlit
@@ -149,7 +154,7 @@ pydeck==0.9.1
     # via streamlit
 pygments==2.18.0
     # via rich
-pylint==3.2.4
+pylint==3.2.5
     # via -r requirements.in
 pyparsing==3.1.2
     # via matplotlib
@@ -159,6 +164,8 @@ python-dateutil==2.9.0.post0
     # via
     #   matplotlib
     #   pandas
+pytils==0.4.1
+    # via tools
 pytz==2024.1
     # via pandas
 redis==5.0.7
@@ -183,11 +190,12 @@ six==1.16.0
     # via
     #   python-dateutil
     #   retrying
+    #   tools
 smmap==5.0.1
     # via gitdb
 streamlit==1.36.0
     # via -r requirements.in
-tenacity==8.4.2
+tenacity==8.5.0
     # via
     #   plotly
     #   streamlit
@@ -195,6 +203,8 @@ toml==0.10.2
     # via streamlit
 tomlkit==0.12.5
     # via pylint
+tools==0.1.9
+    # via -r requirements.in
 toolz==0.12.1
     # via altair
 tornado==6.4.1
@@ -219,5 +229,5 @@ zipp==3.19.2
     # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==70.1.1
+setuptools==70.2.0
     # via dash
