@@ -9,6 +9,7 @@ import pandas as pd
 import streamlit as st
 from tools import chmura_slow, licz_litery, losuj_litere, rzut_kostka, rzut_moneta
 
+
 # Ustawienia aplikacji
 st.set_page_config(
     page_title="Prosta Aplikacja", page_icon=":game_die:", layout="centered"
