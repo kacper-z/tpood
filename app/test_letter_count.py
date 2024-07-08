@@ -5,8 +5,8 @@ Testing a dice throw
 
 import pytest  # pylint: disable=unused-import
 import matplotlib.pyplot as plt  # pylint: disable=unused-import
-from .tools import rzut_kostka
-from .tools import rzut_moneta
+from tools.tools import rzut_kostka
+from tools.tools import rzut_moneta
 
 
 # check if the result values are between 1 and 6, like in a standard dice
